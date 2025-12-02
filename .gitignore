@@ -28,3 +28,11 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### IntelliJ IDEA (추가) ###
+.idea/
+*.iml
+
+### Gradle (추가) ###
+.gradle/
+build/

@@ -56,6 +56,7 @@ public class Q3 {
             *****
 
 */
+        // 내가 푼거
         System.out.println();
         System.out.println("3.");
 
@@ -68,6 +69,22 @@ public class Q3 {
             }
             System.out.println();
         }
+        
+        // 정답
+        System.out.println();
+        System.out.println("3_1.");
+        for(int i = 0;i<5;i++){
+            //스페이스를 4 3 2 1 0
+            for(int j=0; j<5-1-i; j++){
+                System.out.print(" ");
+            }
+            //별 1 2 3 4 5
+            for(int k = 0; k<=i; k++){ // 0 /0 1 2/ 0 1 2 3 4
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
 
 /*
           4.

@@ -17,8 +17,8 @@ public class Q3 {
 
         // 0~2까지 반복, 3부터 빠져나옴, fish가 3마리이니까 0,1,2까지 1을 넣고 나머지는 다 0
         while (fishcount < 3) {
-            int h = r.nextInt(5); // 행 랜덤 지역변수
-            int y = r.nextInt(5); // 열 랜덤 지역변수
+            int h = r.nextInt(5); // 행 랜덤 지역변수 0~4까지 난수발생
+            int y = r.nextInt(5); // 열 랜덤 지역변수 0~4까지 난수발생
 
             if (hosu[h][y] == 0) {
                 hosu[h][y] = 1;
@@ -97,7 +97,7 @@ public class Q3 {
                 if (h < 0) {
                     // 행이 0보다 작으면 안됨
                     System.out.println("더이상 위로 움직일 수 없습니다.");
-                    h = 0;
+                    h = 0;  // 다시 원래 위치
                 }
             } else if (num == 2) {
                 // 아래로 내려가므로 행++

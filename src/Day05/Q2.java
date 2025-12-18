@@ -28,49 +28,7 @@ public class Q2 {
                 }else {
                     System.out.println("잘못된 입력입니다.");
                 }
-//                if ( num1 == 2) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else if ( num1 == 3 ) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else if ( num1 == 4 ) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else if ( num1 == 5 ) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else if ( num1 == 6 ) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else if ( num1 == 7 ) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else if ( num1 == 8 ) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else if ( num1 == 9 ) {
-//                    for(int i = 1; i <= 9; i++){
-//                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
-//                    }
-//                    System.out.println();
-//                } else {
-//                    System.out.println("잘못된 입력입니다.");
-//                }
+
             } else if(num == 2) {
                 for(int dan = 2; dan <= 9; dan++) {
                     for(int i = 1; i <= 9; i++){
@@ -87,5 +45,53 @@ public class Q2 {
             }
         }
 
+/*
+               if ( num1 == 2) {
+
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+                } else if ( num1 == 3 ) {
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+                } else if ( num1 == 4 ) {
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+                } else if ( num1 == 5 ) {
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+                } else if ( num1 == 6 ) {
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+                } else if ( num1 == 7 ) {
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+                } else if ( num1 == 8 ) {
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+                } else if ( num1 == 9 ) {
+                    for(int i = 1; i <= 9; i++){
+                        System.out.println(num1 + "X" + i +"=" + (num1 * i));
+                    }
+                    System.out.println();
+               } else {
+                    System.out.println("잘못된 입력입니다.");
+               }
+
+ */
     }
 }
+

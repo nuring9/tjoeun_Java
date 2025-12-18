@@ -7,8 +7,8 @@ public class Q3_array {
     static void main() {
         Random r = new Random();
         Scanner sc = new Scanner(System.in);
-        int strike = 0;
-        int ball = 0;
+//        int strike = 0;
+//        int ball = 0;
         int com1 = r.nextInt(9) + 1; // 1~9
         int com2 = r.nextInt(9) + 1; // 1~9
         int com3 = r.nextInt(9) + 1; // 1~9

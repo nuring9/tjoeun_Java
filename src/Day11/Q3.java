@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Q3 {
 
-    // 낚시 문제 메소드화
+    // 낚시 문제 메소드화 하기
+    //  직접 풀다가 중단함 . 
 
 //    static void wrongCheck(int[] score){
 //        if(score[0] >=0 && score[0] <=100 && score[1] >=0 && score[1] <=100

@@ -35,14 +35,14 @@ public class Q2_2 {
             int h = sc.nextInt();  // 행 1~9
             System.out.println( h + "행");
             int y = sc.nextInt();  // 열 1~2
-            System.out.println( y + "행");
+            System.out.println( y + "열");
 
             if (h > 0 && h <= seat.length && y > 0 && y <= seat[0].length) {
                 if (seat[h - 1][y - 1] == 0) {
                     // 예약
                     seat[h - 1][y - 1]++; //  seat[h-1][y-1] = 1;
                     count--;
-                    System.out.println((h + 1) + "행, " + (h + 1) + "열 예약이 완료되었습니다.");
+                    System.out.println(h + "행, " + y + "열 예약이 완료되었습니다.");
                 } else {
                     // 비어있는 좌석
                     for (int i = 0; i < seat.length; i++) {

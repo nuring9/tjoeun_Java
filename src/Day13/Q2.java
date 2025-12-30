@@ -1,11 +1,11 @@
 package Day13;
+// 낚시문제 정답코드
 
 import java.util.Random;
 import java.util.Scanner;
 
 public class Q2 {
-    
-    // 낚시문제 정답코드
+
     static int fishMake(int[][] hosu, int fishcount){
         Random r = new Random();
         while(fishcount < 3) {

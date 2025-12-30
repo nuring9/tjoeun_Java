@@ -188,7 +188,7 @@ class Human {
     // Human 클래스 내에서 제품 배열 초기화는 생략된 상태지만 아래 메서드들에서 활용 중
     // 제품을 받는 메서드, 빈 공간 찾아 삽입
     
-    // 컴퓨터를 받을 때 사용되는 메서드
+    // 컴퓨터를 받을 때 사용되는 메서드 ★
     void reciveComputer(Computer1 c) {
         for (int i = 0; i < this.c.length; i++) {
             // 배열 크기만큼 순회하면서 비어있는 null을 찾으면
@@ -236,15 +236,19 @@ class Human {
         for (int i = 0; i < 10; i++) {
             if (c[i] != null) {
                 c[i].use();
+                // 컴퓨터가 null이 아니면 use를 출력
             }
             if (a[i] != null) {
                 a[i].use();
+                // 에어컨이 null이 아니면 use를 출력
             }
             if (r[i] != null) {
                 r[i].use();
+                // 냉장고가 null이 아니면 use를 출력
             }
             if (ac[i] != null) {
                 ac[i].use();
+                // 공기청정기가 null이 아니면 use를 출력
             }
         }
     }
@@ -254,19 +258,28 @@ class Human {
 public class Q1_o {
     public static void main(String[] args) {
         Mart m = new Mart();
+        // 마트 생성
         Human[] h = new Human[3];
+        // 휴먼 3명 배열생성
+
         Scanner sc = new Scanner(System.in);
         //1. 소비자 돈입력
         for (int i = 0; i < h.length; i++) {
             h[i] = new Human();
+            // 휴면 3명 객체생성
             System.out.println((i + 1) + "번째 소비자 : ");
             h[i].money = sc.nextInt();
         }
+
         //2. 게임시작
         while (h[0].money >= 60 || h[1].money >= 60 || h[2].money >= 60) {
+            // 휴면 3명 돈이 60이상이면 반복.
             for (int i = 0; i < h.length; i++) {
+                // 휴먼 길이만큼
                 System.out.println((i + 1) + "번째 소비자 남은 금액 : " + h[i].money);
+                // 휴먼 남은머니 출력
                 if (h[i].money >= 60) {
+                    // 휴먼 머니가 60 이상이면,
                     System.out.print((i + 1) + "번째 소비자 상품을 선택해주세요 1. 컴퓨터 2. 에어콘 3. 냉장고 4.공기청정기 :");
                     int num = sc.nextInt();
                     if (num == 1) {
@@ -274,19 +287,30 @@ public class Q1_o {
                         int num1 = sc.nextInt();
                         if (num1 == 1) {
                             if (h[i].money >= 200) {
-                                //1. 마트에서 컴퓨터 가지고 오기
+                                // 200 이상 있으면,
+
+                                // 1. 마트에서 컴퓨터 가지고 오기 ★
                                 Computer1 c = m.sendComputer(0, 5);
+                                // start, end 0~4까지 5개 삼성 컴퓨터 가져옴.
                                 if (c == null) {
+                                    // 컴퓨터가 널이면
                                     System.out.println("물건이 모두 팔렸습니다.");
                                 } else {
+                                    // 컴퓨터가 있으면,
                                     //2. 가지고 온 컴퓨터 휴먼주기
                                     h[i].money -= c.price;
+                                    // 휴먼 머니에서 - 컴퓨터 가격
+
                                     h[i].reciveComputer(c);
+                                    // 컴퓨터10대 중 null인 곳에 해당 컴퓨터를 넣어놓고 그걸 휴먼i에 주기.
+
                                     //3. 마트에 있는 컴퓨터 null
+                                    // 마트에 해당 인덱스의 컴퓨터에 null로 변경.
                                     m.nullComputer();
                                 }
                             } else {
                                 System.out.println("돈이 부족합니다.");
+                                // 200보다 적은 경우 돈이 부족
                             }
                         } else if (num1 == 2) {
                             if (h[i].money >= 150) {
@@ -430,6 +454,7 @@ public class Q1_o {
         for (int i = 0; i < h.length; i++) {
             System.out.println((i + 1) + "번째 소비자 구매 상품");
             h[i].allPrint();
+            // 가지고 있는거 전부 출력
         }
     }
 }

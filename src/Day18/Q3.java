@@ -25,7 +25,7 @@ class Hosu {
             if (hosu[y][x] == null) {
                 hosu[y][x] = new Fish();
             } else {
-                i--;
+                i--;  // 중복이면 다시 시도
             }
         }
     }

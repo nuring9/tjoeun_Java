@@ -120,7 +120,7 @@ class Mart {
     //human이 가지고 갔어 그러니까 null 작업 해
     // 해당 인덱스 위치의 컴퓨터를 null로 변경 (판매 완료 처리)
     void nullComputer() {
-        c[index] = null;
+        c[index] = null; // i는 for문안에서만 사용하니까 index로 빼서 넘겨줌.
     }
 
     // 2. 에어콘 주기

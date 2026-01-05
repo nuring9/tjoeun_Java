@@ -283,6 +283,7 @@ public class Q1_King_1 {
             }
 
             if (!a.p.checkColorPencil() && !b.p.checkColorPencil()) {
+                // a학색, b학생 둘 다 null인지 체크해서 true면 break;
                 break;
             }
 

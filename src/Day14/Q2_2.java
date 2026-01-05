@@ -60,6 +60,7 @@ public class Q2_2 {
 
         boolean check = true;
         // check 가 true일 경우 반복.
+        // 돌발 상황(정지 상태) 여부 판별.
 
         while (check) {
             int ran = r.nextInt(4) + 1;
@@ -74,6 +75,8 @@ public class Q2_2 {
             }
             // player[0]~[3]까지 돌면서 num이랑 ran 같으면 true(정지), 아니면 false(움직임)
 
+
+            // 경기의 종료 여부 결정
             for (int i = 0; i < players.length; i++) {
                 if (players[i].distance >= 100) {
                     check = false;

@@ -75,11 +75,5 @@ public class Q1 {
                 System.out.println(players[i].dice_name + "주사위" +  " 우승");
             }
         }
-
-
-
-
-
-
     }
 }

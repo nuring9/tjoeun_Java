@@ -16,11 +16,14 @@ public class ListTest_1 {
         System.out.println("\"김\"으로 변경되고 \"곽\"이 추가된 값 : " + lname);
         Collections.shuffle(lname);
         System.out.println("shuffle() 메소드가 적용된 값 : " + lname);
+        // 리스트에 담긴 요소의 순서를 무작위로 섞어주는 기능.
         Collections.sort(lname);
         System.out.println("sort() 메소드가 적용된 값 : " + lname);
+        // 정렬
         System.out.println("5번째 요소의 값 : " + lname.get(4));
         Collections.fill(lname,"김");
         System.out.println("모든 요소를 \"김\"으로 설정된 값 : " + lname);
+        //  배열(리스트)의 모든 요소를 특정 값으로 한 번에 채우는 기능
 
     }
 }

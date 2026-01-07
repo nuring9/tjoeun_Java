@@ -49,7 +49,11 @@ public class Q1_1 {
                 }
                 if(i == telBook.size()){
                     System.out.println(name+"이 전화번호부에 없습니다.");
-                }
+                }  // 내가 찾으려는 이름을 단 한 번도 발견하지 못했다.
+                /*
+                리스트의 모든 요소를 다 확인한 후, i가 telBook.size()와 같아지는 순간
+                반복 조건(i < telBook.size())이 거짓이 되어 반복문이 자연스럽게 종료.
+                 */
             }
             else if(num == 3){
                 for(int i = 0;i<telBook.size();i++){

@@ -12,7 +12,7 @@ public class EXFileReader {
         int i;
         // i = fr.read(); 정수값이 옴.
         while ((i = fr.read()) != -1){
-            // 올때 -1이 아니면 반복, -1은 문자열을 끝.
+            // 올때 -1이 아니면 반복, -1은 문자열을 끝이 null인데 이걸 -1로 표현
             System.out.print((char) i);
             // 형변환이 하면서 출력
         }

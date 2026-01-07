@@ -22,5 +22,6 @@ public class AbstractClassTest {
     static void main() {
         // A2 a2 = new A2(); 에러남
         A2 a2 = new B2();
+        a2.abc();
     }
 }

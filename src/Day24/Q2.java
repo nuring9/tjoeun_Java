@@ -39,6 +39,7 @@ class TreasurBox {
             // 유효한 인덱스면 해당 선물 반환
             // null → 꽝
             // Present 객체 → 진짜 선물
+            // 배열의 인덱스는 0 ~ 99이기 때문에 <= 99
         } else {
             return null;
             // 범위 초과 시 무조건 꽝 처리
@@ -66,6 +67,7 @@ class Joiner extends Thread {
 
 
     public void run() {
+        // 여기가 스레드로 실행되는 코드
         while (true) {
             // 계속 상자를 열다가 조건이 되면 break
             p = t.openBox(index - 1);
@@ -101,12 +103,12 @@ public class Q2 {
         Joiner j3 = new Joiner(t, "강아지");
         // 참가자 3명 생성
 
-        j1.start();
+        j1.start();  // Joiner의 run 부분 호출
         j2.start();
         j3.start();
         // 동시에 게임 참여
 
-        j1.join();
+        j1.join();  // join을 호출한 쪽이, j1의 run이 끝날 때까지 기다린다. 즉, j1 스레드가 종료될 때까지 대기(block)
         j2.join();
         j3.join();
         // 메인 스레드가 끝날 때까지 기다림
